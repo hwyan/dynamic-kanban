@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= title %></title>
+<link rel='stylesheet' href='/css/index.css' />
+<script type="text/javascript" src="js/lib/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/lib/socket.io-1.2.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		socket = io.connect('/');
+		socket.on('url-changed', function(data) {
+			data = JSON.parse(data);
+			$('#main').attr('src', data.url);
+		});
+		
+		socket.on('broadcast-message', function(data) {
+			$('#message').html(data).fadeIn();
+			setTimeout(function() {
+				$('#message').hide();
+			}, 30000);
+		});
+		
+		setInterval(function() {
+			var $main = $('#main')
+			//$main.height($main[0].contentWindow.document.documentElement.scrollHeight);
+		}, 500);
+		setTimeout(function() {
+			$('#message').hide();
+		}, 30000);
+	});
+</script>
+</head>
+<body>
+	<div id="message" <% if(!currentMessage) { %>style="display: none;"<% } %>><%= currentMessage?currentMessage:'' %></div>
+	<iframe id="main" src="<%= currentUrl %>" scrolling="auto"></iframe>
+</body>
+</html>

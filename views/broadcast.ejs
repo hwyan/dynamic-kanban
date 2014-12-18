@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= title %></title>
+<link rel='stylesheet' href='/css/index.css' />
+<script type="text/javascript" src="js/lib/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#publish').click(function() {
+			$('#publish').attr('disabled', 'disabled');
+			$.ajax({
+				type: 'POST',
+				url: '/message',
+				data: {
+					message: $('#content').val()
+				},
+				success: function() {
+					$('#publish').removeAttr('disabled');
+				}
+			});
+		});
+	});
+</script>
+</head>
+<body>
+	<textarea rows="5" cols="30" id="content"></textarea>
+	<input type="button" value="Publish" id="publish">
+</body>
+</html>
