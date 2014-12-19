@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res) {
 	res.render('index', {
 		title : 'Dynamic Kanban',
-		currentUrl : global.currentUrl,
+		currentActivity : global.currentActivity,
 		currentMessage : global.currentMessage
 	});
 });

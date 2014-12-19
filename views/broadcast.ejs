@@ -2,7 +2,13 @@
 <html>
 <head>
 <title><%= title %></title>
-<link rel='stylesheet' href='/css/index.css' />
+<style>
+	#publish, #content {
+		display: block;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+</style>
 <script type="text/javascript" src="js/lib/jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -15,6 +21,7 @@
 					message: $('#content').val()
 				},
 				success: function() {
+					$('#content').val('');
 					$('#publish').removeAttr('disabled');
 				}
 			});
@@ -23,7 +30,7 @@
 </script>
 </head>
 <body>
-	<textarea rows="5" cols="30" id="content"></textarea>
-	<input type="button" value="Publish" id="publish">
+	<textarea rows="5" cols="40" id="content"></textarea>
+	<input id="publish" type="button" value="Publish" id="publish">
 </body>
 </html>

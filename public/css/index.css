@@ -1,11 +1,17 @@
 html, body {
 	overflow: hidden;
+	margin: 0px;
 }
 
-#main {
+#website {
 	width: 100%;
 	height: 2000px;
 	border: 0px;
+}
+
+#picture img {
+	display: block;
+	margin: auto;
 }
 
 #message {
@@ -14,10 +20,10 @@ html, body {
 	background: #006599;
 	border-radius: 5px;
 	color: white;
-	font-size: 30px;
+	font-size: 35px;
 	margin: auto;
-	width: 400px;
-	height: 100px;
+	width: 500px;
+	height: 150px;
 	left: 0px;
 	right: 0px;
 	top: 0px;
