@@ -3,7 +3,7 @@
 	"batchPictures": {
 		"path": "pics",
 		"strategy": "random",
-		"timeout": 5
+		"timeout": 15
 	},
 	"activities": [
 		{
