@@ -1,81 +1,60 @@
 {
-  "timeout": 30,
-  "batchPictures": {
-    "path": "images",
-    "strategy": "random",
-    "timeout": 5
-  },
-  "activities": [
-    {
-      "type": "picture",
-      "value": "/images/01.jpg",
-      "timeout": 5
-    }, {
-      "type": "website",
-      "value": "https://rally1.rallydev.com/#/18139297458d/custom/26410441219"
-    }, {
-      "type": "picture",
-      "value": ["/images/02.jpg", "/images/03.jpg"],
-      "timeout": 5
-    }, {
-      "type": "website",
-      "value": "https://rally1.rallydev.com/#/18139297458d/defects?tpsV=sq%3A24555682024"
-    }, {
-      "type": "picture",
-      "value": ["/images/04.jpg", "/images/05.jpg"],
-      "timeout": 5
-    }, {
-      "type": "website",
-      "value": "https://rally1.rallydev.com/#/18139297458d/defects?tpsV=sq%3A21297327970"
-    }, {
-      "type": "website",
-      "value": "https://rally1.rallydev.com/#/18139297458d/releaseplanning"
-    }, {
-      "type": "picture",
-      "value": ["/images/06.jpg", "/images/07.jpg"],
-      "timeout": 5
-    }, {
-      "type": "website",
-      "value": "https://rally1.rallydev.com/#/15100140825d/oiterationstatus?iterationKey=19798500213"
-    }, {
-      "type": "website",
-      "value": "https://rally1.rallydev.com/#/15100140825d/custom/22296015722"
-    }, {
-      "type": "picture",
-      "value": ["/images/01.jpg", "/images/09.jpg"],
-      "timeout": 5
-    }, {
-      "type": "website",
-      "value": "http://smarttestdb.cal.ci.spirentcom.com/stapp/state_report/"
-    }, {
-      "type": "website",
-      "value": "http://dashboard.cal.ci.spirentcom.com:8080/spd/"
-    }, {
-      "type": "picture",
-      "value": ["/images/10.jpg", "/images/11.jpg"],
-      "timeout": 5
-    }, {
-      "type": "website",
-      "value": "http://avalanche-jenkins.spirentcom.com:8080/view/AV-NEXT%20Release/"
-    }, {
-      "type": "website",
-      "value": "http://avalanche-jenkins.spirentcom.com:8080/view/Integration/"
-    }, {
-      "type": "website",
-      "value": "http://avalanche-jenkins.spirentcom.com:8080/view/Release/"
-    }, {
-      "type": "picture",
-      "value": "/images/12.jpg",
-      "timeout": 5
-    }, {
-      "type": "website",
-      "value": "http://smarttestdb.cal.ci.spirentcom.com/stapp/suite_summary/?s=AVNEXT&b=1"
-    }, {
-      "type": "website",
-      "value": "http://smarttestdb.cal.ci.spirentcom.com/stapp/suite_summary/?s=AVCMDR&b=0"
-    }, {
-      "type": "website",
-      "value": "http://map.ipviking.com/"
-    }
-  ]
+	"timeout": 30,
+	"batchPictures": {
+		"path": "pics",
+		"strategy": "random",
+		"timeout": 5
+	},
+	"activities": [
+		{
+			"type": "website",
+			"value": "https://rally1.rallydev.com/#/18139297458d/custom/26410441219"
+		}, {
+			"type": "website",
+			"value": "https://rally1.rallydev.com/#/18139297458d/defects?tpsV=sq%3A24555682024"
+		}, {
+			"type": "website",
+			"value": "https://rally1.rallydev.com/#/18139297458d/defects?tpsV=sq%3A21297327970"
+		}, {
+			"type": "website",
+			"value": "https://rally1.rallydev.com/#/18139297458d/releaseplanning"
+		}, {
+			"type": "website",
+			"value": "https://rally1.rallydev.com/#/15100140825d/oiterationstatus?iterationKey=19798500213"
+		}, {
+			"type": "website",
+			"value": "https://rally1.rallydev.com/#/15100140825d/custom/22296015722"
+		}, {
+			"type": "website",
+			"value": "http://smarttestdb.cal.ci.spirentcom.com/stapp/state_report/"
+		}, {
+			"type": "website",
+			"value": "http://dashboard.cal.ci.spirentcom.com:8080/spd/"
+		}, {
+			"type": "website",
+			"value": "http://avalanche-jenkins.spirentcom.com:8080/view/AV-NEXT%20Release/"
+		}, {
+			"type": "website",
+			"value": "http://avalanche-jenkins.spirentcom.com:8080/view/Integration/"
+		}, {
+			"type": "website",
+			"value": "http://avalanche-jenkins.spirentcom.com:8080/view/Release/"
+		}, {
+			"type": "website",
+			"value": "http://smarttestdb.cal.ci.spirentcom.com/stapp/suite_summary/?s=AVNEXT&b=0"
+		}, {
+			"type": "website",
+			"value": "http://smarttestdb.cal.ci.spirentcom.com/stapp/suite_summary/?s=AVNEXT&b=1"
+		}, {
+			"type": "website",
+			"value": "http://smarttestdb.cal.ci.spirentcom.com/stapp/suite_summary/?s=AVCMDR&b=1"
+		}, {
+			"type": "website",
+			"value": "http://smarttestdb.cal.ci.spirentcom.com/stapp/suite_summary/?s=AVCMDR&b=0"
+		}, {
+			"type": "website",
+			"value": "http://map.ipviking.com/",
+			"timeout": 180
+		}
+	]
 }

@@ -35,7 +35,8 @@
 		});
 
 		socket.on('broadcast-message', function(data) {
-			$('#message').html(data).fadeIn();
+			$('#message_content').html(data);
+			$('#message').fadeIn();
 			setTimeout(function() {
 				$('#message').hide();
 			}, 30000);

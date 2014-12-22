@@ -18,14 +18,23 @@ html, body {
 	padding: 10px;
 	position: fixed;
 	background: #006599;
+	background: url(/images/bubble.png) no-repeat;
 	border-radius: 5px;
-	color: white;
+	color: #333333;
 	font-size: 35px;
 	margin: auto;
-	width: 500px;
-	height: 150px;
+	width: 512px;
+	height: 512px;
 	left: 0px;
 	right: 0px;
 	top: 0px;
 	bottom: 0px;
+}
+
+#message_content {
+	height: 250px;
+	width: 345px;
+	margin: auto;
+	margin-top: 110px;
+	vertical-align: middle;
 }
